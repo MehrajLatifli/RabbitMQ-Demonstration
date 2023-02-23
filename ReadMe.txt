@@ -23,6 +23,8 @@ rabbitmq terminal:
 
 rabbitmq-plugins list
 
+=======================================================================================================
+
 
 rabbitmq terminal: 
 
@@ -67,6 +69,8 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin1234@" `-p 1430:1433 --
 sql server: 
 
 localhost,1430
+
+=======================================================================================================
 
 
 connection string: 
