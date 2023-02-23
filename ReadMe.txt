@@ -5,6 +5,8 @@ NotificationService
 UserService.API
 WalletService.Console
 
+
+=======================================================================================================
 =======================================================================================================
 
 docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=sa -e RABBITMQ_DEFAULT_PASS=admin1234 -p 5672:5672 -p 15672:15672 rabbitmq:3-management
@@ -17,14 +19,14 @@ docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:1567
 login: guest
 
 =======================================================================================================
-
+=======================================================================================================
 
 rabbitmq terminal: 
 
 rabbitmq-plugins list
 
 =======================================================================================================
-
+=======================================================================================================
 
 rabbitmq terminal: 
 
@@ -59,22 +61,20 @@ rabbitmq_web_mqtt_examples
 rabbitmq_web_stomp
 rabbitmq_web_stomp_examples
 
-
 =======================================================================================================
-
+=======================================================================================================
 
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin1234@" `-p 1430:1433 --name sql2 --hostname sql2` -d ` mcr.microsoft.com/mssql/server:2022-latest
 
 sql server: localhost,1430
 
-
 =======================================================================================================
-
+=======================================================================================================
 
 connection string: 
 
 Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;
 
-
+=======================================================================================================
 =======================================================================================================
 
