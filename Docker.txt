@@ -19,9 +19,14 @@ login: guest
 =======================================================================================================
 
 
-rabbitmq terminal: rabbitmq-plugins list
+rabbitmq terminal: 
 
-rabbitmq terminal: rabbitmq-plugins enable --offline 
+rabbitmq-plugins list
+
+
+rabbitmq terminal: 
+
+rabbitmq-plugins enable --offline 
 rabbitmq_management
 rabbitmq_mqtt 
 rabbitmq_federation_management 
@@ -58,9 +63,15 @@ rabbitmq_web_stomp_examples
 
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin1234@" `-p 1430:1433 --name sql2 --hostname sql2` -d ` mcr.microsoft.com/mssql/server:2022-latest
 
-sql server: localhost,1430
 
-connection string: Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;
+sql server: 
+
+localhost,1430
+
+
+connection string: 
+
+Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;
 
 
 =======================================================================================================
