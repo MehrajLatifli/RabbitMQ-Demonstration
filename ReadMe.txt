@@ -10,12 +10,16 @@ WalletService.Console
 
 docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=sa -e RABBITMQ_DEFAULT_PASS=admin1234 -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 
+PS: Not supported in my project.
+
 ==== OR ====
 
 
 docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3.8-management
 
 login: guest
+
+PS: Supported in my project.
 
 =======================================================================================================
 =======================================================================================================
@@ -67,12 +71,14 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin1234@" `-p 1430:1433 --
 
 sql server: localhost,1430
 
+PS: Supported in my project.
+
 =======================================================================================================
 =======================================================================================================
 
-connection string: 
+connection string: Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;
 
-Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;
+PS: Supported in my project.
 
 =======================================================================================================
 =======================================================================================================
