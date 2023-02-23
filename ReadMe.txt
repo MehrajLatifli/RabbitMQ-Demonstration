@@ -65,10 +65,8 @@ rabbitmq_web_stomp_examples
 
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin1234@" `-p 1430:1433 --name sql2 --hostname sql2` -d ` mcr.microsoft.com/mssql/server:2022-latest
 
+sql server: localhost,1430
 
-sql server: 
-
-localhost,1430
 
 =======================================================================================================
 
