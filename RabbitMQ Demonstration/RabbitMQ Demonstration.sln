@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.API", "UserService.API\UserService.API.csproj", "{21AE471F-FFB9-4C17-AAAE-6A7B3504BC6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationService.Console", "NotificationService.Console\NotificationService.Console.csproj", "{3201A7D0-527F-493B-91A6-933FCFEBFE40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartToCartService.API", "CartToCartService.API\CartToCartService.API.csproj", "{69CFC38C-2000-4007-BD61-450FEAA8CF85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WalletService.Console", "WalletService.Console\WalletService.Console.csproj", "{3B2C314E-CB84-4F54-8735-CE755C4042C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database.ClassLibrary", "Database.ClassLibrary\Database.ClassLibrary.csproj", "{0416D704-F21B-4929-8586-193E2D907E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQInfrastructure.ClassLibrary", "RabbitMQInfrastructure.ClassLibrary\RabbitMQInfrastructure.ClassLibrary.csproj", "{B3B6DD8C-57DB-4A21-BDEC-AA1EA37207CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21AE471F-FFB9-4C17-AAAE-6A7B3504BC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AE471F-FFB9-4C17-AAAE-6A7B3504BC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AE471F-FFB9-4C17-AAAE-6A7B3504BC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AE471F-FFB9-4C17-AAAE-6A7B3504BC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3201A7D0-527F-493B-91A6-933FCFEBFE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3201A7D0-527F-493B-91A6-933FCFEBFE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3201A7D0-527F-493B-91A6-933FCFEBFE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3201A7D0-527F-493B-91A6-933FCFEBFE40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69CFC38C-2000-4007-BD61-450FEAA8CF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69CFC38C-2000-4007-BD61-450FEAA8CF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69CFC38C-2000-4007-BD61-450FEAA8CF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69CFC38C-2000-4007-BD61-450FEAA8CF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2C314E-CB84-4F54-8735-CE755C4042C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2C314E-CB84-4F54-8735-CE755C4042C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2C314E-CB84-4F54-8735-CE755C4042C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2C314E-CB84-4F54-8735-CE755C4042C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0416D704-F21B-4929-8586-193E2D907E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0416D704-F21B-4929-8586-193E2D907E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0416D704-F21B-4929-8586-193E2D907E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0416D704-F21B-4929-8586-193E2D907E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B6DD8C-57DB-4A21-BDEC-AA1EA37207CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B6DD8C-57DB-4A21-BDEC-AA1EA37207CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B6DD8C-57DB-4A21-BDEC-AA1EA37207CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B6DD8C-57DB-4A21-BDEC-AA1EA37207CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BE4ABAB-4110-44BE-B1D9-11FAD59ED0ED}
+	EndGlobalSection
+EndGlobal
