@@ -29,6 +29,7 @@ namespace Database.ClassLibrary.DatabaseFirst
             string connection = @"Data Source=localhost,1430;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             optionsBuilder.UseSqlServer(connection);
         }
+
         public override int SaveChanges()
         {
             try
