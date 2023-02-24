@@ -63,6 +63,7 @@ namespace UserService.API.Controllers
                     Surname = user.Surname,
                     City = user.City,
                     When=user.When,
+                    PhoneNumber=user.PhoneNumber,
                     EventType = "UserCreated"
                 };
 
@@ -107,6 +108,7 @@ namespace UserService.API.Controllers
                         Surname = item.Surname,
                         City = item.City,
                         When = item.When,
+                        PhoneNumber = item.PhoneNumber,
                         EventType = "UserDeleted"
                     };
 

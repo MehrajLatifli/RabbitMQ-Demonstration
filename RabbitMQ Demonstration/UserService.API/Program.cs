@@ -15,6 +15,7 @@ builder.Services.AddControllers(options => options.SuppressImplicitRequiredAttri
 
 builder.Services.AddControllers().AddNewtonsoftJson();
 
+
 builder.Services.AddControllers().AddJsonOptions(o =>
 {
 
