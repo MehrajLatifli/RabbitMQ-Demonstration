@@ -1,9 +1,9 @@
 Multiple startup projects:
 
-CartToCartService.API
-NotificationService
-UserService.API
-WalletService.Console
+<p>CartToCartService.API   	   </p>
+<p>NotificationService		   </p>
+<p>UserService.API			   </p>
+<p>WalletService.Console	   </p>
 
 <p>================================================================</p>
 <p>================================================================</p>
