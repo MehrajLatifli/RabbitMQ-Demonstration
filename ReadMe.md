@@ -58,6 +58,8 @@ connection string:
 
 Data Source=localhost,1430;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;
 
+Services: SQL Server Browser -> Start (Running)
+
 PS: Supported in my project.
 
 =======================================================================================================
