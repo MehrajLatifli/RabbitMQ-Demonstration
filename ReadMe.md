@@ -32,36 +32,15 @@ rabbitmq-plugins list
 
 rabbitmq terminal: 
 
-rabbitmq-plugins enable --offline 
-rabbitmq_management
-rabbitmq_mqtt 
-rabbitmq_federation_management 
-rabbitmq_stomp
-rabbitmq_amqp1_0 
-rabbitmq_auth_backend_cache       
-rabbitmq_auth_backend_http        
-rabbitmq_auth_backend_ldap        
-rabbitmq_auth_backend_oauth2      
-rabbitmq_auth_mechanism_ssl  
-rabbitmq_consistent_hash_exchange
-rabbitmq_jms_topic_exchange 
-rabbitmq_peer_discovery_aws
-rabbitmq_peer_discovery_common
-rabbitmq_peer_discovery_consul
-rabbitmq_peer_discovery_etcd
-rabbitmq_peer_discovery_k8s
-rabbitmq_random_exchange
-rabbitmq_recent_history_exchange
-rabbitmq_sharding
-rabbitmq_shovel
-rabbitmq_shovel_management
-rabbitmq_top
-rabbitmq_tracing
-rabbitmq_trust_store
-rabbitmq_web_mqtt
-rabbitmq_web_mqtt_examples
-rabbitmq_web_stomp
-rabbitmq_web_stomp_examples
+rabbitmq-plugins enable --offline rabbitmq_management rabbitmq_mqtt rabbitmq_federation_management rabbitmq_stomp rabbitmq_amqp1_0 rabbitmq_auth_backend_cache rabbitmq_auth_backend_http     
+
+rabbitmq-plugins enable --offline rabbitmq_auth_backend_ldap rabbitmq_auth_backend_oauth2 rabbitmq_auth_mechanism_ssl rabbitmq_consistent_hash_exchange rabbitmq_jms_topic_exchange 
+
+rabbitmq-plugins enable --offline rabbitmq_peer_discovery_aws rabbitmq_peer_discovery_common rabbitmq_peer_discovery_consul rabbitmq_peer_discovery_etcd rabbitmq_peer_discovery_k8s
+
+rabbitmq-plugins enable --offline rabbitmq_random_exchange rabbitmq_recent_history_exchange rabbitmq_sharding rabbitmq_shovel rabbitmq_shovel_management rabbitmq_top rabbitmq_tracing
+
+rabbitmq-plugins enable --offline rabbitmq_trust_store rabbitmq_web_mqtt rabbitmq_web_mqtt_examples rabbitmq_web_stomp rabbitmq_web_stomp_examples rabbitmq_event_exchange
 
 =======================================================================================================
 =======================================================================================================
@@ -75,7 +54,9 @@ PS: Supported in my project.
 =======================================================================================================
 =======================================================================================================
 
-connection string: Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;
+connection string: 
+
+Data Source=localhost,1430;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;
 
 PS: Supported in my project.
 

@@ -26,7 +26,7 @@ namespace Database.ClassLibrary.DatabaseFirst
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connection = @"Data Source=localhost,1433;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@; Integrated Security=True; ApplicationIntent=ReadWrite; MultipleActiveResultSets = True; Trusted_Connection=True;Trusted_Connection=True; TrustServerCertificate=True;";
+            string connection = @"Data Source=localhost,1430;Initial Catalog=RabbitMQ_Db;User ID=sa;Password=admin1234@;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             optionsBuilder.UseSqlServer(connection);
         }
         public override int SaveChanges()
