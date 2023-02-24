@@ -5,8 +5,8 @@ NotificationService
 UserService.API
 WalletService.Console
 
-<h1>================</h1>
-<h1>================</h1>
+<h1>================================</h1>
+<h1>================================</h1>
 
 docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=sa -e RABBITMQ_DEFAULT_PASS=admin1234 -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 
@@ -20,15 +20,15 @@ login: guest
 
 PS: Supported in my project.
 
-<h1>================</h1>
-<h1>================</h1>
+<h1>================================</h1>
+<h1>================================</h1>
 
 rabbitmq terminal: 
 
 rabbitmq-plugins list
 
-<h1>================</h1>
-<h1>================</h1>
+<h1>================================</h1>
+<h1>================================</h1>
 
 rabbitmq terminal: 
 
@@ -42,8 +42,8 @@ rabbitmq-plugins enable --offline rabbitmq_random_exchange rabbitmq_recent_histo
 
 rabbitmq-plugins enable --offline rabbitmq_trust_store rabbitmq_web_mqtt rabbitmq_web_mqtt_examples rabbitmq_web_stomp rabbitmq_web_stomp_examples rabbitmq_event_exchange
 
-<h1>================</h1>
-<h1>================</h1>
+<h1>================================</h1>
+<h1>================================</h1>
 
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin1234@" `-p 1430:1433 --name sql2 --hostname sql2` -d ` mcr.microsoft.com/mssql/server:2022-latest
 
@@ -51,8 +51,8 @@ sql server: localhost,1430
 
 PS: Supported in my project.
 
-<h1>================</h1>
-<h1>================</h1>
+<h1>================================</h1>
+<h1>================================</h1>
 
 connection string: 
 
@@ -62,6 +62,6 @@ Services: SQL Server Browser -> Start (Running)
 
 PS: Supported in my project.
 
-<h1>================</h1>
-<h1>================</h1>
+<h1>================================</h1>
+<h1>================================</h1>
 
