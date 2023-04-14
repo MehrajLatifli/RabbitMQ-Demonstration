@@ -1,12 +1,12 @@
 ﻿using Database.ClassLibrary.DataAccess;
 using Database.ClassLibrary.DataAccess.Events;
 using Database.ClassLibrary.DatabaseFirst;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using NetTopologySuite.Index.HPRtree;
 using Newtonsoft.Json;
-using NuGet.Protocol.Core.Types;
 using RabbitMQInfrastructure.ClassLibrary;
-
+using System.Web.Http.Results;
 
 namespace UserService.API.Controllers
 {
@@ -52,38 +52,47 @@ namespace UserService.API.Controllers
         [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] User user)
         {
-            try
+            if (user != null)
             {
-                _userDal.Add(user);
-
-                var userEvent = new UserEvent
+                try
                 {
-                    IdUser = user.IdUser,
-                    Name = user.Name,
-                    Surname = user.Surname,
-                    City = user.City,
-                    When=user.When,
-                    PhoneNumber=user.PhoneNumber,
-                    EventType = "UserCreated"
-                };
+                    _userDal.Add(user);
 
-                string status = "created";
+                    var userEvent = new UserEvent
+                    {
+                        IdUser = user.IdUser,
+                        Name = user.Name,
+                        Surname = user.Surname,
+                        City = user.City,
+                        When = user.When,
+                        PhoneNumber = user.PhoneNumber,
+                        EventType = "UserCreated"
+                    };
 
-                _rabbitMQService.PublishUserCreatedMessage(JsonConvert.SerializeObject(userEvent));
+                    string status = "created";
 
-                _rabbitMQService.PublishUserNotificationMessage(JsonConvert.SerializeObject(userEvent));
+                    _rabbitMQService.PublishUserCreatedMessage(JsonConvert.SerializeObject(userEvent));
+
+                    _rabbitMQService.PublishUserNotificationMessage(JsonConvert.SerializeObject(userEvent));
 
 
+
+                }
+               catch (Exception ex)
+                {
+
+                    return BadRequest(ex.Message);
+                }
 
                 return Ok("Created");
 
             }
-            catch (Exception)
+
+            else
             {
 
-
+                return BadRequest();
             }
-            return BadRequest();
 
         }
 
